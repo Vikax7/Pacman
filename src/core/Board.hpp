@@ -21,9 +21,9 @@ class Board {
         std::vector<std::vector<CellType>> grid_;
         size_t width_ = 0;
         size_t height_ = 0;
-        size_t num_dot_ = 0;
+        size_t num_dots_ = 0;
         GridPos player_start_{};
-        std::vector<GridPos> ghost_start;
+        std::vector<GridPos> ghost_start_;
 
     public:
 

@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/viktoria/oop/Pacman/build/_deps/doctest-subbuild/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

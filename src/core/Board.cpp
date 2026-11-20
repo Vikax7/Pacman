@@ -1,4 +1,6 @@
-#include Board.hpp
+#include "Board.hpp"
+#include <stdexcept>
+#include <fstream>
 
 void Board::loadFromFile(const std::string& filepath) {
     std::ifstream file(filepath);
@@ -56,7 +58,7 @@ void Board::loadFromFile(const std::string& filepath) {
                     parsed_ghost_starts.push_back(GridPos{ix, y});
                     row.push_back(CellType::pass);
                     break;
-                defualt:
+                default:
                     throw std::runtime_error(std::string("Недопустимый символ на карте: ") + ch);
             }
         }
@@ -80,7 +82,7 @@ void Board::loadFromFile(const std::string& filepath) {
     width_ = grid_.front().size();
     num_dots_ = dots;
     player_start_ = parsed_player_start;
-    ghost_starts_ = std::move(parsed_ghost_starts);
+    ghost_start_ = std::move(parsed_ghost_starts);
 }
 
 bool Board::isInside(int x, int y) const noexcept {
@@ -109,7 +111,7 @@ void Board::setCell(int x, int y, CellType type) {
     grid_[static_cast<size_t>(y)][static_cast<size_t>(x)] = type;
 }
 
-void Board::decrementDots() noexcept {
+void Board::decrementDots() {
     if (num_dots_ > 0) {
         --num_dots_;
     }
