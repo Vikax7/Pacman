@@ -1,24 +1,24 @@
-Start testing: Nov 21 01:18 +07
+Start testing: Nov 22 02:02 +07
 ----------------------------------------------------------
 1/1 Testing: CoreTests
 1/1 Test: CoreTests
 Command: "/home/viktoria/oop/Pacman/build/pacman_tests"
 Directory: /home/viktoria/oop/Pacman/build
-"CoreTests" start time: Nov 21 01:18 +07
+"CoreTests" start time: Nov 22 02:02 +07
 Output:
 ----------------------------------------------------------
 [doctest] doctest version is "2.4.11"
 [doctest] run with "--help" for options
 ===============================================================================
-[doctest] test cases:  3 |  3 passed | 0 failed | 0 skipped
-[doctest] assertions: 31 | 31 passed | 0 failed |
+[doctest] test cases:  9 |  9 passed | 0 failed | 0 skipped
+[doctest] assertions: 98 | 98 passed | 0 failed |
 [doctest] Status: SUCCESS!
 <end of output>
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"CoreTests" end time: Nov 21 01:18 +07
+"CoreTests" end time: Nov 22 02:02 +07
 "CoreTests" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Nov 21 01:18 +07
+End testing: Nov 22 02:02 +07

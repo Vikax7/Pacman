@@ -1,2 +1,2 @@
-CoreTests 1 0.00284359
+CoreTests 2 0.00135997
 ---

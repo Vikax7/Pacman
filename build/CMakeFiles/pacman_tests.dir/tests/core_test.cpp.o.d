@@ -283,4 +283,16 @@ CMakeFiles/pacman_tests.dir/tests/core_test.cpp.o: \
  /usr/include/c++/15/cfloat \
  /usr/lib/gcc/x86_64-linux-gnu/15/include/float.h \
  /usr/include/x86_64-linux-gnu/sys/time.h \
- /home/viktoria/oop/Pacman/src/core/Board.hpp
+ /home/viktoria/oop/Pacman/src/core/Player.hpp \
+ /home/viktoria/oop/Pacman/src/core/Board.hpp \
+ /home/viktoria/oop/Pacman/src/core/Ghost.hpp /usr/include/c++/15/memory \
+ /usr/include/c++/15/bits/stl_raw_storage_iter.h \
+ /usr/include/c++/15/bits/align.h /usr/include/c++/15/bits/unique_ptr.h \
+ /usr/include/c++/15/bits/shared_ptr.h \
+ /usr/include/c++/15/bits/shared_ptr_base.h \
+ /usr/include/c++/15/bits/allocated_ptr.h \
+ /usr/include/c++/15/ext/concurrence.h \
+ /usr/include/c++/15/bits/shared_ptr_atomic.h \
+ /usr/include/c++/15/backward/auto_ptr.h \
+ /usr/include/c++/15/bits/ranges_uninitialized.h \
+ /usr/include/c++/15/pstl/glue_memory_defs.h

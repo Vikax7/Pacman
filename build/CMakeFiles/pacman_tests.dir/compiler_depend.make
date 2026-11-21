@@ -4,6 +4,8 @@
 CMakeFiles/pacman_tests.dir/tests/core_test.cpp.o: /home/viktoria/oop/Pacman/tests/core_test.cpp \
   _deps/doctest-src/doctest/doctest.h \
   /home/viktoria/oop/Pacman/src/core/Board.hpp \
+  /home/viktoria/oop/Pacman/src/core/Ghost.hpp \
+  /home/viktoria/oop/Pacman/src/core/Player.hpp \
   /usr/include/alloca.h \
   /usr/include/asm-generic/bitsperlong.h \
   /usr/include/asm-generic/errno-base.h \
@@ -13,10 +15,13 @@ CMakeFiles/pacman_tests.dir/tests/core_test.cpp.o: /home/viktoria/oop/Pacman/tes
   /usr/include/asm-generic/types.h \
   /usr/include/c++/15/algorithm \
   /usr/include/c++/15/atomic \
+  /usr/include/c++/15/backward/auto_ptr.h \
   /usr/include/c++/15/backward/binders.h \
   /usr/include/c++/15/bit \
   /usr/include/c++/15/bits/algorithmfwd.h \
+  /usr/include/c++/15/bits/align.h \
   /usr/include/c++/15/bits/alloc_traits.h \
+  /usr/include/c++/15/bits/allocated_ptr.h \
   /usr/include/c++/15/bits/allocator.h \
   /usr/include/c++/15/bits/atomic_base.h \
   /usr/include/c++/15/bits/atomic_lockfree_defines.h \
@@ -76,9 +81,13 @@ CMakeFiles/pacman_tests.dir/tests/core_test.cpp.o: /home/viktoria/oop/Pacman/tes
   /usr/include/c++/15/bits/ranges_algobase.h \
   /usr/include/c++/15/bits/ranges_base.h \
   /usr/include/c++/15/bits/ranges_cmp.h \
+  /usr/include/c++/15/bits/ranges_uninitialized.h \
   /usr/include/c++/15/bits/ranges_util.h \
   /usr/include/c++/15/bits/refwrap.h \
   /usr/include/c++/15/bits/requires_hosted.h \
+  /usr/include/c++/15/bits/shared_ptr.h \
+  /usr/include/c++/15/bits/shared_ptr_atomic.h \
+  /usr/include/c++/15/bits/shared_ptr_base.h \
   /usr/include/c++/15/bits/specfun.h \
   /usr/include/c++/15/bits/sstream.tcc \
   /usr/include/c++/15/bits/std_abs.h \
@@ -96,6 +105,7 @@ CMakeFiles/pacman_tests.dir/tests/core_test.cpp.o: /home/viktoria/oop/Pacman/tes
   /usr/include/c++/15/bits/stl_multimap.h \
   /usr/include/c++/15/bits/stl_multiset.h \
   /usr/include/c++/15/bits/stl_pair.h \
+  /usr/include/c++/15/bits/stl_raw_storage_iter.h \
   /usr/include/c++/15/bits/stl_relops.h \
   /usr/include/c++/15/bits/stl_set.h \
   /usr/include/c++/15/bits/stl_tempbuf.h \
@@ -108,6 +118,7 @@ CMakeFiles/pacman_tests.dir/tests/core_test.cpp.o: /home/viktoria/oop/Pacman/tes
   /usr/include/c++/15/bits/stringfwd.h \
   /usr/include/c++/15/bits/uniform_int_dist.h \
   /usr/include/c++/15/bits/unique_lock.h \
+  /usr/include/c++/15/bits/unique_ptr.h \
   /usr/include/c++/15/bits/unordered_set.h \
   /usr/include/c++/15/bits/uses_allocator.h \
   /usr/include/c++/15/bits/uses_allocator_args.h \
@@ -137,6 +148,7 @@ CMakeFiles/pacman_tests.dir/tests/core_test.cpp.o: /home/viktoria/oop/Pacman/tes
   /usr/include/c++/15/ext/aligned_buffer.h \
   /usr/include/c++/15/ext/alloc_traits.h \
   /usr/include/c++/15/ext/atomicity.h \
+  /usr/include/c++/15/ext/concurrence.h \
   /usr/include/c++/15/ext/numeric_traits.h \
   /usr/include/c++/15/ext/string_conversions.h \
   /usr/include/c++/15/ext/type_traits.h \
@@ -150,12 +162,14 @@ CMakeFiles/pacman_tests.dir/tests/core_test.cpp.o: /home/viktoria/oop/Pacman/tes
   /usr/include/c++/15/limits \
   /usr/include/c++/15/locale \
   /usr/include/c++/15/map \
+  /usr/include/c++/15/memory \
   /usr/include/c++/15/mutex \
   /usr/include/c++/15/new \
   /usr/include/c++/15/numbers \
   /usr/include/c++/15/ostream \
   /usr/include/c++/15/pstl/execution_defs.h \
   /usr/include/c++/15/pstl/glue_algorithm_defs.h \
+  /usr/include/c++/15/pstl/glue_memory_defs.h \
   /usr/include/c++/15/pstl/pstl_config.h \
   /usr/include/c++/15/ratio \
   /usr/include/c++/15/set \
@@ -418,8 +432,6 @@ pacman_tests: /lib64/ld-linux-x86-64.so.2 \
 
 /usr/include/x86_64-linux-gnu/c++/15/bits/ctype_base.h:
 
-/usr/include/x86_64-linux-gnu/c++/15/bits/c++locale.h:
-
 /usr/lib/gcc/x86_64-linux-gnu/15/include/stddef.h:
 
 /usr/include/x86_64-linux-gnu/c++/15/bits/c++config.h:
@@ -522,29 +534,33 @@ CMakeFiles/pacman_tests.dir/tests/core_test.cpp.o:
 
 /usr/include/x86_64-linux-gnu/bits/siginfo-arch.h:
 
-/usr/include/c++/15/cstdlib:
+/usr/lib/gcc/x86_64-linux-gnu/15/libgcc.a:
 
-/usr/include/c++/15/bits/requires_hosted.h:
+/usr/include/x86_64-linux-gnu/bits/sigcontext.h:
 
-/usr/include/c++/15/bits/locale_facets.h:
+/usr/include/x86_64-linux-gnu/bits/sigaction.h:
 
-/usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
+/usr/include/x86_64-linux-gnu/bits/time.h:
 
-/usr/include/c++/15/cstdio:
+/usr/include/x86_64-linux-gnu/bits/select.h:
 
-/usr/include/x86_64-linux-gnu/bits/floatn-common.h:
+/usr/include/x86_64-linux-gnu/bits/sched.h:
 
-/usr/include/c++/15/cstdint:
+/usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
+/usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h:
 
-/usr/include/c++/15/concepts:
+/usr/include/x86_64-linux-gnu/bits/posix_opt.h:
 
-/usr/include/c++/15/clocale:
+/usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
 
-/usr/include/c++/15/climits:
+/usr/include/x86_64-linux-gnu/bits/posix1_lim.h:
+
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h:
 
 /usr/include/c++/15/cctype:
+
+/usr/include/c++/15/bits/ranges_uninitialized.h:
 
 /usr/include/c++/15/cerrno:
 
@@ -555,6 +571,8 @@ CMakeFiles/pacman_tests.dir/tests/core_test.cpp.o:
 /usr/lib/x86_64-linux-gnu/libgcc_s.so.1:
 
 /usr/include/linux/close_range.h:
+
+/usr/include/c++/15/bits/unique_ptr.h:
 
 /usr/include/c++/15/bits/uniform_int_dist.h:
 
@@ -572,10 +590,6 @@ CMakeFiles/pacman_tests.dir/tests/core_test.cpp.o:
 
 /usr/include/c++/15/bits/stl_set.h:
 
-/usr/include/c++/15/bits/stl_uninitialized.h:
-
-/usr/include/c++/15/bits/stl_multimap.h:
-
 /usr/include/stdio.h:
 
 /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
@@ -586,11 +600,15 @@ CMakeFiles/pacman_tests.dir/tests/core_test.cpp.o:
 
 /usr/include/limits.h:
 
+/usr/include/c++/15/clocale:
+
 /usr/include/c++/15/bits/sstream.tcc:
 
-/usr/lib/gcc/x86_64-linux-gnu/15/libgcc.a:
+/usr/include/c++/15/bits/stl_uninitialized.h:
 
-/usr/include/x86_64-linux-gnu/bits/sigcontext.h:
+/usr/include/c++/15/bits/stl_multimap.h:
+
+/usr/include/c++/15/bits/shared_ptr_base.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h:
 
@@ -608,8 +626,6 @@ CMakeFiles/pacman_tests.dir/tests/core_test.cpp.o:
 
 /usr/include/c++/15/bits/ranges_cmp.h:
 
-/usr/include/c++/15/bits/stl_algo.h:
-
 /usr/include/c++/15/bits/stl_multiset.h:
 
 /usr/include/x86_64-linux-gnu/bits/fp-logb.h:
@@ -624,10 +640,6 @@ CMakeFiles/pacman_tests.dir/tests/core_test.cpp.o:
 
 /usr/include/c++/15/bits/predefined_ops.h:
 
-/usr/include/c++/15/bits/enable_special_members.h:
-
-/usr/include/c++/15/bits/stl_tree.h:
-
 /usr/include/c++/15/bits/postypes.h:
 
 /usr/include/x86_64-linux-gnu/asm/posix_types.h:
@@ -638,11 +650,11 @@ CMakeFiles/pacman_tests.dir/tests/core_test.cpp.o:
 
 /usr/include/c++/15/bits/ostream.tcc:
 
-/usr/include/x86_64-linux-gnu/asm/unistd_64.h:
-
-/usr/include/c++/15/bits/std_mutex.h:
-
 /usr/include/c++/15/bits/node_handle.h:
+
+/usr/include/x86_64-linux-gnu/c++/15/bits/c++locale.h:
+
+/usr/include/c++/15/pstl/glue_memory_defs.h:
 
 /usr/include/c++/15/bits/unordered_set.h:
 
@@ -652,21 +664,19 @@ CMakeFiles/pacman_tests.dir/tests/core_test.cpp.o:
 
 /usr/include/c++/15/bits/uses_allocator.h:
 
-/usr/include/c++/15/bits/chrono.h:
+/usr/include/x86_64-linux-gnu/c++/15/bits/ctype_inline.h:
 
-/usr/include/c++/15/bits/nested_exception.h:
+/usr/include/c++/15/bits/move.h:
 
-/usr/include/linux/sched/types.h:
+/usr/include/c++/15/bits/atomic_lockfree_defines.h:
 
-/usr/include/c++/15/bits/atomic_base.h:
+/usr/include/c++/15/bits/max_size_type.h:
+
+/usr/include/c++/15/bits/localefwd.h:
 
 /usr/include/c++/15/bits/stl_algobase.h:
 
 /usr/include/c++/15/bits/stl_relops.h:
-
-/usr/include/c++/15/bits/localefwd.h:
-
-/usr/include/c++/15/bits/istream.tcc:
 
 /usr/include/c++/15/bits/quoted_string.h:
 
@@ -680,39 +690,53 @@ CMakeFiles/pacman_tests.dir/tests/core_test.cpp.o:
 
 /usr/include/linux/limits.h:
 
-/usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
-
 /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
 
 /usr/include/asm-generic/errno.h:
 
 /usr/include/syscall.h:
 
-/usr/lib/x86_64-linux-gnu/libmvec.so.1:
+/usr/include/c++/15/bits/atomic_base.h:
 
-/usr/include/c++/15/bits/stl_iterator_base_types.h:
+/usr/include/c++/15/bits/shared_ptr.h:
 
-/usr/include/stdc-predef.h:
+/usr/include/c++/15/bits/chrono.h:
+
+/usr/include/c++/15/bits/nested_exception.h:
+
+/usr/include/linux/sched/types.h:
 
 /usr/include/c++/15/bits/algorithmfwd.h:
+
+/usr/include/c++/15/bits/requires_hosted.h:
+
+/usr/include/c++/15/bits/locale_facets.h:
+
+/usr/include/c++/15/cstdlib:
+
+/usr/include/c++/15/bits/std_mutex.h:
+
+/usr/include/x86_64-linux-gnu/asm/unistd_64.h:
+
+/usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
 
 /usr/include/c++/15/bits/std_abs.h:
 
 /usr/include/c++/15/typeinfo:
 
-/usr/include/x86_64-linux-gnu/bits/posix1_lim.h:
+/home/viktoria/oop/Pacman/src/core/Player.hpp:
+
+/usr/include/c++/15/bits/allocated_ptr.h:
+
+/usr/include/c++/15/bits/istream.tcc:
+
+/usr/include/c++/15/bits/align.h:
 
 /usr/include/c++/15/bits/stl_iterator.h:
 
 /usr/include/c++/15/vector:
 
 /usr/include/alloca.h:
-
-/usr/include/c++/15/cmath:
-
-/usr/include/stdint.h:
-
-/usr/include/endian.h:
 
 /usr/include/c++/15/bits/ostream.h:
 
@@ -722,11 +746,11 @@ CMakeFiles/pacman_tests.dir/tests/core_test.cpp.o:
 
 /usr/include/c++/15/bits/basic_string.tcc:
 
+/usr/include/c++/15/bits/stringfwd.h:
+
+/usr/include/c++/15/bits/erase_if.h:
+
 /usr/include/c++/15/bits/alloc_traits.h:
-
-/usr/include/x86_64-linux-gnu/bits/local_lim.h:
-
-/usr/include/c++/15/bits/codecvt.h:
 
 /usr/include/asm-generic/errno-base.h:
 
@@ -736,16 +760,6 @@ CMakeFiles/pacman_tests.dir/tests/core_test.cpp.o:
 
 /usr/include/asm-generic/types.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/sigval_t.h:
-
-/home/viktoria/oop/Pacman/tests/core_test.cpp:
-
-/usr/include/c++/15/bits/ios_base.h:
-
-/usr/include/c++/15/bits/basic_ios.tcc:
-
-/usr/include/c++/15/bits/stl_tempbuf.h:
-
 /usr/lib/x86_64-linux-gnu/libm.so:
 
 /usr/include/asm-generic/int-ll64.h:
@@ -754,7 +768,21 @@ CMakeFiles/pacman_tests.dir/tests/core_test.cpp.o:
 
 /usr/include/c++/15/tr1/beta_function.tcc:
 
-/usr/include/c++/15/bits/exception_ptr.h:
+/usr/include/x86_64-linux-gnu/bits/types/sigval_t.h:
+
+/usr/include/c++/15/memory:
+
+/home/viktoria/oop/Pacman/tests/core_test.cpp:
+
+/usr/include/c++/15/bits/ios_base.h:
+
+/usr/include/c++/15/bits/stl_tempbuf.h:
+
+/usr/lib/x86_64-linux-gnu/libmvec.so.1:
+
+/usr/include/c++/15/bits/stl_iterator_base_types.h:
+
+/usr/include/stdc-predef.h:
 
 /usr/include/x86_64-linux-gnu/c++/15/bits/cpu_defines.h:
 
@@ -762,19 +790,43 @@ CMakeFiles/pacman_tests.dir/tests/core_test.cpp.o:
 
 /usr/include/c++/15/bits/uses_allocator_args.h:
 
-/usr/include/c++/15/bits/cpp_type_traits.h:
-
-/usr/include/c++/15/bits/basic_string.h:
-
-/usr/include/c++/15/streambuf:
-
 /usr/include/c++/15/bits/specfun.h:
 
 /usr/include/c++/15/backward/binders.h:
 
 /usr/include/c++/15/utility:
 
+/usr/include/c++/15/bits/cpp_type_traits.h:
+
+/usr/include/c++/15/bits/basic_string.h:
+
+/usr/include/c++/15/streambuf:
+
+/usr/include/c++/15/bits/basic_ios.tcc:
+
+/home/viktoria/oop/Pacman/src/core/Ghost.hpp:
+
+/usr/include/c++/15/cmath:
+
+/usr/include/stdint.h:
+
+/usr/include/endian.h:
+
+/usr/include/x86_64-linux-gnu/bits/local_lim.h:
+
+/usr/include/c++/15/bits/codecvt.h:
+
+/usr/include/c++/15/bits/enable_special_members.h:
+
+/usr/include/c++/15/bits/stl_tree.h:
+
+/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
+
+/usr/include/c++/15/cstring:
+
 /usr/include/c++/15/bits/exception_defines.h:
+
+/usr/include/c++/15/backward/auto_ptr.h:
 
 /usr/include/c++/15/bits/stl_heap.h:
 
@@ -798,19 +850,19 @@ CMakeFiles/pacman_tests.dir/tests/core_test.cpp.o:
 
 /usr/include/c++/15/initializer_list:
 
+/usr/include/c++/15/bits/stl_raw_storage_iter.h:
+
 /usr/include/c++/15/bits/ranges_util.h:
 
 /usr/include/c++/15/tuple:
 
-/usr/include/asm-generic/posix_types.h:
-
 /usr/include/c++/15/bits/allocator.h:
+
+/usr/include/asm-generic/posix_types.h:
 
 /usr/include/c++/15/bit:
 
 /usr/include/pthread.h:
-
-/usr/include/c++/15/bits/atomic_lockfree_defines.h:
 
 /usr/include/x86_64-linux-gnu/bits/uio_lim.h:
 
@@ -848,13 +900,7 @@ _deps/doctest-src/doctest/doctest.h:
 
 /usr/include/c++/15/bits/invoke.h:
 
-/usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h:
-
-/usr/include/c++/15/compare:
-
-/usr/include/c++/15/bits/cxxabi_forced.h:
-
-/usr/include/c++/15/map:
+/usr/include/c++/15/bits/iterator_concepts.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/error_t.h:
 
@@ -862,11 +908,17 @@ _deps/doctest-src/doctest/doctest.h:
 
 /usr/include/c++/15/bits/functexcept.h:
 
-/usr/include/c++/15/bits/iterator_concepts.h:
-
 /usr/include/x86_64-linux-gnu/bits/mathcalls-macros.h:
 
-/usr/include/c++/15/bits/max_size_type.h:
+/usr/include/c++/15/bits/stl_algo.h:
+
+/usr/include/c++/15/bits/shared_ptr_atomic.h:
+
+/usr/include/c++/15/compare:
+
+/usr/include/c++/15/bits/cxxabi_forced.h:
+
+/usr/include/c++/15/map:
 
 /usr/include/c++/15/bits/ostream_insert.h:
 
@@ -880,17 +932,21 @@ _deps/doctest-src/doctest/doctest.h:
 
 /usr/include/c++/15/bits/locale_facets_nonio.h:
 
-/usr/include/c++/15/csignal:
+/usr/include/c++/15/climits:
+
+/usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
+
+/usr/include/c++/15/concepts:
 
 /usr/include/c++/15/exception:
 
-/usr/include/c++/15/bits/erase_if.h:
+/usr/include/c++/15/csignal:
 
-/usr/include/c++/15/bits/stringfwd.h:
+/usr/include/c++/15/cstdint:
 
-/usr/include/x86_64-linux-gnu/c++/15/bits/ctype_inline.h:
+/usr/include/c++/15/cstdio:
 
-/usr/include/c++/15/bits/move.h:
+/usr/include/x86_64-linux-gnu/bits/floatn-common.h:
 
 /usr/include/c++/15/ctime:
 
@@ -906,11 +962,23 @@ _deps/doctest-src/doctest/doctest.h:
 
 /usr/include/linux/types.h:
 
+/usr/include/c++/15/bits/exception_ptr.h:
+
+/usr/include/c++/15/ext/concurrence.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
+
+/usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:
+
 /usr/include/c++/15/bits/hashtable_policy.h:
 
 /usr/include/c++/15/ext/string_conversions.h:
 
 /usr/include/c++/15/ios:
+
+/usr/include/x86_64-linux-gnu/bits/sigevent-consts.h:
+
+/usr/include/c++/15/iosfwd:
 
 /usr/include/x86_64-linux-gnu/c++/15/bits/gthr-default.h:
 
@@ -928,9 +996,13 @@ _deps/doctest-src/doctest/doctest.h:
 
 /usr/include/c++/15/string_view:
 
-/usr/include/c++/15/bits/charconv.h:
+/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
+
+/usr/include/c++/15/mutex:
 
 /usr/include/c++/15/pstl/glue_algorithm_defs.h:
+
+/usr/include/c++/15/bits/charconv.h:
 
 /usr/include/c++/15/tr1/poly_laguerre.tcc:
 
@@ -986,10 +1058,6 @@ _deps/doctest-src/doctest/doctest.h:
 
 /usr/include/c++/15/tr1/hypergeometric.tcc:
 
-/usr/include/x86_64-linux-gnu/bits/time.h:
-
-/usr/include/x86_64-linux-gnu/bits/select.h:
-
 /usr/include/c++/15/tr1/legendre_function.tcc:
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h:
@@ -1026,8 +1094,6 @@ _deps/doctest-src/doctest/doctest.h:
 
 /usr/include/x86_64-linux-gnu/asm/bitsperlong.h:
 
-/usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
-
 /usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
 
 /usr/include/math.h:
@@ -1045,6 +1111,12 @@ _deps/doctest-src/doctest/doctest.h:
 /usr/include/signal.h:
 
 /usr/include/strings.h:
+
+/usr/include/x86_64-linux-gnu/bits/setjmp.h:
+
+/usr/include/x86_64-linux-gnu/bits/getopt_posix.h:
+
+/usr/include/time.h:
 
 /usr/include/unistd.h:
 
@@ -1070,10 +1142,6 @@ _deps/doctest-src/doctest/doctest.h:
 
 /usr/include/x86_64-linux-gnu/bits/getopt_core.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
-
-/usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:
-
 /usr/lib/x86_64-linux-gnu/libm.so.6:
 
 /usr/include/c++/15/bits/basic_ios.h:
@@ -1087,29 +1155,3 @@ _deps/doctest-src/doctest/doctest.h:
 /usr/include/c++/15/bits/hash_bytes.h:
 
 /usr/include/x86_64-linux-gnu/bits/math-vector.h:
-
-/usr/include/c++/15/mutex:
-
-/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
-
-/usr/include/x86_64-linux-gnu/bits/mathcalls.h:
-
-/usr/include/x86_64-linux-gnu/bits/posix_opt.h:
-
-/usr/include/c++/15/cstring:
-
-/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
-
-/usr/include/x86_64-linux-gnu/bits/sched.h:
-
-/usr/include/x86_64-linux-gnu/bits/getopt_posix.h:
-
-/usr/include/time.h:
-
-/usr/include/x86_64-linux-gnu/bits/setjmp.h:
-
-/usr/include/x86_64-linux-gnu/bits/sigaction.h:
-
-/usr/include/c++/15/iosfwd:
-
-/usr/include/x86_64-linux-gnu/bits/sigevent-consts.h:

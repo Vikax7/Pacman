@@ -19,6 +19,8 @@ add_library(pacman_core
     src/core/Board.cpp
     src/core/Player.hpp
     src/core/Player.cpp
+    src/core/Ghost.hpp
+    src/core/Ghost.cpp
 )
 
 target_include_directories(pacman_core

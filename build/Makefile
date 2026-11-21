@@ -260,6 +260,30 @@ src/core/Board.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pacman_core.dir/build.make CMakeFiles/pacman_core.dir/src/core/Board.cpp.s
 .PHONY : src/core/Board.cpp.s
 
+src/core/Ghost.o: src/core/Ghost.cpp.o
+.PHONY : src/core/Ghost.o
+
+# target to build an object file
+src/core/Ghost.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pacman_core.dir/build.make CMakeFiles/pacman_core.dir/src/core/Ghost.cpp.o
+.PHONY : src/core/Ghost.cpp.o
+
+src/core/Ghost.i: src/core/Ghost.cpp.i
+.PHONY : src/core/Ghost.i
+
+# target to preprocess a source file
+src/core/Ghost.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pacman_core.dir/build.make CMakeFiles/pacman_core.dir/src/core/Ghost.cpp.i
+.PHONY : src/core/Ghost.cpp.i
+
+src/core/Ghost.s: src/core/Ghost.cpp.s
+.PHONY : src/core/Ghost.s
+
+# target to generate assembly for a file
+src/core/Ghost.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pacman_core.dir/build.make CMakeFiles/pacman_core.dir/src/core/Ghost.cpp.s
+.PHONY : src/core/Ghost.cpp.s
+
 src/core/Player.o: src/core/Player.cpp.o
 .PHONY : src/core/Player.o
 
@@ -377,6 +401,9 @@ help:
 	@echo "... src/core/Board.o"
 	@echo "... src/core/Board.i"
 	@echo "... src/core/Board.s"
+	@echo "... src/core/Ghost.o"
+	@echo "... src/core/Ghost.i"
+	@echo "... src/core/Ghost.s"
 	@echo "... src/core/Player.o"
 	@echo "... src/core/Player.i"
 	@echo "... src/core/Player.s"

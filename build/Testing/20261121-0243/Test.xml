@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="(empty)"
+	BuildStamp="20261121-0243-Experimental"
+	Name="(empty)"
+	Generator="ctest-4.2.3"
+	CompilerName=""
+	CompilerVersion=""
+	OSName="Linux"
+	Hostname="viktoria-Prestige-15-A12SC"
+	OSRelease="7.0.0-43-generic"
+	OSVersion="#43-Ubuntu SMP PREEMPT_DYNAMIC Fri Oct 23 13:25:25 UTC 2026"
+	OSPlatform="x86_64"
+	Is64Bits="1"
+	VendorString="GenuineIntel"
+	VendorID="Intel Corporation"
+	FamilyID="6"
+	ModelID="154"
+	ModelName="12th Gen Intel(R) Core(TM) i5-1240P"
+	ProcessorCacheSize="12288"
+	NumberOfLogicalCPU="16"
+	NumberOfPhysicalCPU="12"
+	TotalVirtualMemory="4095"
+	TotalPhysicalMemory="15173"
+	LogicalProcessorsPerPhysical="1"
+	ProcessorClockFrequency="787.541"
+	>
+	<Testing>
+		<StartDateTime>Nov 22 01:57 +07</StartDateTime>
+		<StartTestTime>1795287478</StartTestTime>
+		<TestList/>
+		<EndDateTime>Nov 22 01:57 +07</EndDateTime>
+		<EndTestTime>1795287478</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>
