@@ -1,2 +1,2 @@
-/usr/bin/ar qc libpacman_core.a CMakeFiles/pacman_core.dir/src/core/Board.cpp.o CMakeFiles/pacman_core.dir/src/core/Player.cpp.o CMakeFiles/pacman_core.dir/src/core/Ghost.cpp.o
+/usr/bin/ar qc libpacman_core.a CMakeFiles/pacman_core.dir/src/core/Board.cpp.o CMakeFiles/pacman_core.dir/src/core/Player.cpp.o CMakeFiles/pacman_core.dir/src/core/Ghost.cpp.o CMakeFiles/pacman_core.dir/src/core/Game.cpp.o
 /usr/bin/ranlib libpacman_core.a

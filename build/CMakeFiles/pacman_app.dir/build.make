@@ -72,28 +72,28 @@ include CMakeFiles/pacman_app.dir/flags.make
 CMakeFiles/pacman_app.dir/codegen:
 .PHONY : CMakeFiles/pacman_app.dir/codegen
 
-CMakeFiles/pacman_app.dir/src/core/app/main.cpp.o: CMakeFiles/pacman_app.dir/flags.make
-CMakeFiles/pacman_app.dir/src/core/app/main.cpp.o: /home/viktoria/oop/Pacman/src/core/app/main.cpp
-CMakeFiles/pacman_app.dir/src/core/app/main.cpp.o: CMakeFiles/pacman_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/viktoria/oop/Pacman/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/pacman_app.dir/src/core/app/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pacman_app.dir/src/core/app/main.cpp.o -MF CMakeFiles/pacman_app.dir/src/core/app/main.cpp.o.d -o CMakeFiles/pacman_app.dir/src/core/app/main.cpp.o -c /home/viktoria/oop/Pacman/src/core/app/main.cpp
+CMakeFiles/pacman_app.dir/src/app/main.cpp.o: CMakeFiles/pacman_app.dir/flags.make
+CMakeFiles/pacman_app.dir/src/app/main.cpp.o: /home/viktoria/oop/Pacman/src/app/main.cpp
+CMakeFiles/pacman_app.dir/src/app/main.cpp.o: CMakeFiles/pacman_app.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/viktoria/oop/Pacman/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/pacman_app.dir/src/app/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pacman_app.dir/src/app/main.cpp.o -MF CMakeFiles/pacman_app.dir/src/app/main.cpp.o.d -o CMakeFiles/pacman_app.dir/src/app/main.cpp.o -c /home/viktoria/oop/Pacman/src/app/main.cpp
 
-CMakeFiles/pacman_app.dir/src/core/app/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/pacman_app.dir/src/core/app/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/viktoria/oop/Pacman/src/core/app/main.cpp > CMakeFiles/pacman_app.dir/src/core/app/main.cpp.i
+CMakeFiles/pacman_app.dir/src/app/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/pacman_app.dir/src/app/main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/viktoria/oop/Pacman/src/app/main.cpp > CMakeFiles/pacman_app.dir/src/app/main.cpp.i
 
-CMakeFiles/pacman_app.dir/src/core/app/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/pacman_app.dir/src/core/app/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/viktoria/oop/Pacman/src/core/app/main.cpp -o CMakeFiles/pacman_app.dir/src/core/app/main.cpp.s
+CMakeFiles/pacman_app.dir/src/app/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/pacman_app.dir/src/app/main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/viktoria/oop/Pacman/src/app/main.cpp -o CMakeFiles/pacman_app.dir/src/app/main.cpp.s
 
 # Object files for target pacman_app
 pacman_app_OBJECTS = \
-"CMakeFiles/pacman_app.dir/src/core/app/main.cpp.o"
+"CMakeFiles/pacman_app.dir/src/app/main.cpp.o"
 
 # External object files for target pacman_app
 pacman_app_EXTERNAL_OBJECTS =
 
-pacman_app: CMakeFiles/pacman_app.dir/src/core/app/main.cpp.o
+pacman_app: CMakeFiles/pacman_app.dir/src/app/main.cpp.o
 pacman_app: CMakeFiles/pacman_app.dir/build.make
 pacman_app: CMakeFiles/pacman_app.dir/compiler_depend.ts
 pacman_app: libpacman_core.a

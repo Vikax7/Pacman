@@ -114,11 +114,26 @@ CMakeFiles/pacman_core.dir/src/core/Ghost.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/pacman_core.dir/src/core/Ghost.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/viktoria/oop/Pacman/src/core/Ghost.cpp -o CMakeFiles/pacman_core.dir/src/core/Ghost.cpp.s
 
+CMakeFiles/pacman_core.dir/src/core/Game.cpp.o: CMakeFiles/pacman_core.dir/flags.make
+CMakeFiles/pacman_core.dir/src/core/Game.cpp.o: /home/viktoria/oop/Pacman/src/core/Game.cpp
+CMakeFiles/pacman_core.dir/src/core/Game.cpp.o: CMakeFiles/pacman_core.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/viktoria/oop/Pacman/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/pacman_core.dir/src/core/Game.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pacman_core.dir/src/core/Game.cpp.o -MF CMakeFiles/pacman_core.dir/src/core/Game.cpp.o.d -o CMakeFiles/pacman_core.dir/src/core/Game.cpp.o -c /home/viktoria/oop/Pacman/src/core/Game.cpp
+
+CMakeFiles/pacman_core.dir/src/core/Game.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/pacman_core.dir/src/core/Game.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/viktoria/oop/Pacman/src/core/Game.cpp > CMakeFiles/pacman_core.dir/src/core/Game.cpp.i
+
+CMakeFiles/pacman_core.dir/src/core/Game.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/pacman_core.dir/src/core/Game.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/viktoria/oop/Pacman/src/core/Game.cpp -o CMakeFiles/pacman_core.dir/src/core/Game.cpp.s
+
 # Object files for target pacman_core
 pacman_core_OBJECTS = \
 "CMakeFiles/pacman_core.dir/src/core/Board.cpp.o" \
 "CMakeFiles/pacman_core.dir/src/core/Player.cpp.o" \
-"CMakeFiles/pacman_core.dir/src/core/Ghost.cpp.o"
+"CMakeFiles/pacman_core.dir/src/core/Ghost.cpp.o" \
+"CMakeFiles/pacman_core.dir/src/core/Game.cpp.o"
 
 # External object files for target pacman_core
 pacman_core_EXTERNAL_OBJECTS =
@@ -126,9 +141,10 @@ pacman_core_EXTERNAL_OBJECTS =
 libpacman_core.a: CMakeFiles/pacman_core.dir/src/core/Board.cpp.o
 libpacman_core.a: CMakeFiles/pacman_core.dir/src/core/Player.cpp.o
 libpacman_core.a: CMakeFiles/pacman_core.dir/src/core/Ghost.cpp.o
+libpacman_core.a: CMakeFiles/pacman_core.dir/src/core/Game.cpp.o
 libpacman_core.a: CMakeFiles/pacman_core.dir/build.make
 libpacman_core.a: CMakeFiles/pacman_core.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/viktoria/oop/Pacman/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library libpacman_core.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/viktoria/oop/Pacman/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX static library libpacman_core.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/pacman_core.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/pacman_core.dir/link.txt --verbose=$(VERBOSE)
 

@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/pacman_core.dir/src/core/Board.cpp.o"
   "CMakeFiles/pacman_core.dir/src/core/Board.cpp.o.d"
+  "CMakeFiles/pacman_core.dir/src/core/Game.cpp.o"
+  "CMakeFiles/pacman_core.dir/src/core/Game.cpp.o.d"
   "CMakeFiles/pacman_core.dir/src/core/Ghost.cpp.o"
   "CMakeFiles/pacman_core.dir/src/core/Ghost.cpp.o.d"
   "CMakeFiles/pacman_core.dir/src/core/Player.cpp.o"

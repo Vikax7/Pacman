@@ -19,15 +19,21 @@
 },
 {
   "directory": "/home/viktoria/oop/Pacman/build",
+  "command": "/usr/bin/c++  -I/home/viktoria/oop/Pacman/src/core -g -std=c++20 -Wall -Wextra -Werror -o CMakeFiles/pacman_core.dir/src/core/Game.cpp.o -c /home/viktoria/oop/Pacman/src/core/Game.cpp",
+  "file": "/home/viktoria/oop/Pacman/src/core/Game.cpp",
+  "output": "CMakeFiles/pacman_core.dir/src/core/Game.cpp.o"
+},
+{
+  "directory": "/home/viktoria/oop/Pacman/build",
   "command": "/usr/bin/c++  -I/home/viktoria/oop/Pacman/src/gui -I/home/viktoria/oop/Pacman/src/core -g -std=c++20 -Wall -Wextra -Werror -o CMakeFiles/pacman_ui.dir/src/gui/placeholder.cpp.o -c /home/viktoria/oop/Pacman/src/gui/placeholder.cpp",
   "file": "/home/viktoria/oop/Pacman/src/gui/placeholder.cpp",
   "output": "CMakeFiles/pacman_ui.dir/src/gui/placeholder.cpp.o"
 },
 {
   "directory": "/home/viktoria/oop/Pacman/build",
-  "command": "/usr/bin/c++  -I/home/viktoria/oop/Pacman/src/core -I/home/viktoria/oop/Pacman/src/gui -g -std=c++20 -Wall -Wextra -Werror -o CMakeFiles/pacman_app.dir/src/core/app/main.cpp.o -c /home/viktoria/oop/Pacman/src/core/app/main.cpp",
-  "file": "/home/viktoria/oop/Pacman/src/core/app/main.cpp",
-  "output": "CMakeFiles/pacman_app.dir/src/core/app/main.cpp.o"
+  "command": "/usr/bin/c++  -I/home/viktoria/oop/Pacman/src/core -I/home/viktoria/oop/Pacman/src/gui -g -std=c++20 -Wall -Wextra -Werror -o CMakeFiles/pacman_app.dir/src/app/main.cpp.o -c /home/viktoria/oop/Pacman/src/app/main.cpp",
+  "file": "/home/viktoria/oop/Pacman/src/app/main.cpp",
+  "output": "CMakeFiles/pacman_app.dir/src/app/main.cpp.o"
 },
 {
   "directory": "/home/viktoria/oop/Pacman/build",

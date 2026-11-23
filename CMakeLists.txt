@@ -21,6 +21,8 @@ add_library(pacman_core
     src/core/Player.cpp
     src/core/Ghost.hpp
     src/core/Ghost.cpp
+    src/core/Game.hpp
+    src/core/Game.cpp
 )
 
 target_include_directories(pacman_core
@@ -45,7 +47,7 @@ target_link_libraries(pacman_ui
 
 # 3. Исполняемое приложение
 add_executable(pacman_app
-    src/core/app/main.cpp
+    src/app/main.cpp
 )
 
 target_link_libraries(pacman_app

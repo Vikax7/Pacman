@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/viktoria/oop/Pacman/src/core/Board.cpp" "CMakeFiles/pacman_core.dir/src/core/Board.cpp.o" "gcc" "CMakeFiles/pacman_core.dir/src/core/Board.cpp.o.d"
+  "/home/viktoria/oop/Pacman/src/core/Game.cpp" "CMakeFiles/pacman_core.dir/src/core/Game.cpp.o" "gcc" "CMakeFiles/pacman_core.dir/src/core/Game.cpp.o.d"
   "/home/viktoria/oop/Pacman/src/core/Ghost.cpp" "CMakeFiles/pacman_core.dir/src/core/Ghost.cpp.o" "gcc" "CMakeFiles/pacman_core.dir/src/core/Ghost.cpp.o.d"
   "/home/viktoria/oop/Pacman/src/core/Player.cpp" "CMakeFiles/pacman_core.dir/src/core/Player.cpp.o" "gcc" "CMakeFiles/pacman_core.dir/src/core/Player.cpp.o.d"
   )

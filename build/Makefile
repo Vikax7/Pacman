@@ -236,6 +236,30 @@ doctest_with_main/fast:
 	$(MAKE) $(MAKESILENT) -f _deps/doctest-build/CMakeFiles/doctest_with_main.dir/build.make _deps/doctest-build/CMakeFiles/doctest_with_main.dir/build
 .PHONY : doctest_with_main/fast
 
+src/app/main.o: src/app/main.cpp.o
+.PHONY : src/app/main.o
+
+# target to build an object file
+src/app/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pacman_app.dir/build.make CMakeFiles/pacman_app.dir/src/app/main.cpp.o
+.PHONY : src/app/main.cpp.o
+
+src/app/main.i: src/app/main.cpp.i
+.PHONY : src/app/main.i
+
+# target to preprocess a source file
+src/app/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pacman_app.dir/build.make CMakeFiles/pacman_app.dir/src/app/main.cpp.i
+.PHONY : src/app/main.cpp.i
+
+src/app/main.s: src/app/main.cpp.s
+.PHONY : src/app/main.s
+
+# target to generate assembly for a file
+src/app/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pacman_app.dir/build.make CMakeFiles/pacman_app.dir/src/app/main.cpp.s
+.PHONY : src/app/main.cpp.s
+
 src/core/Board.o: src/core/Board.cpp.o
 .PHONY : src/core/Board.o
 
@@ -259,6 +283,30 @@ src/core/Board.s: src/core/Board.cpp.s
 src/core/Board.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pacman_core.dir/build.make CMakeFiles/pacman_core.dir/src/core/Board.cpp.s
 .PHONY : src/core/Board.cpp.s
+
+src/core/Game.o: src/core/Game.cpp.o
+.PHONY : src/core/Game.o
+
+# target to build an object file
+src/core/Game.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pacman_core.dir/build.make CMakeFiles/pacman_core.dir/src/core/Game.cpp.o
+.PHONY : src/core/Game.cpp.o
+
+src/core/Game.i: src/core/Game.cpp.i
+.PHONY : src/core/Game.i
+
+# target to preprocess a source file
+src/core/Game.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pacman_core.dir/build.make CMakeFiles/pacman_core.dir/src/core/Game.cpp.i
+.PHONY : src/core/Game.cpp.i
+
+src/core/Game.s: src/core/Game.cpp.s
+.PHONY : src/core/Game.s
+
+# target to generate assembly for a file
+src/core/Game.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pacman_core.dir/build.make CMakeFiles/pacman_core.dir/src/core/Game.cpp.s
+.PHONY : src/core/Game.cpp.s
 
 src/core/Ghost.o: src/core/Ghost.cpp.o
 .PHONY : src/core/Ghost.o
@@ -307,30 +355,6 @@ src/core/Player.s: src/core/Player.cpp.s
 src/core/Player.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pacman_core.dir/build.make CMakeFiles/pacman_core.dir/src/core/Player.cpp.s
 .PHONY : src/core/Player.cpp.s
-
-src/core/app/main.o: src/core/app/main.cpp.o
-.PHONY : src/core/app/main.o
-
-# target to build an object file
-src/core/app/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pacman_app.dir/build.make CMakeFiles/pacman_app.dir/src/core/app/main.cpp.o
-.PHONY : src/core/app/main.cpp.o
-
-src/core/app/main.i: src/core/app/main.cpp.i
-.PHONY : src/core/app/main.i
-
-# target to preprocess a source file
-src/core/app/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pacman_app.dir/build.make CMakeFiles/pacman_app.dir/src/core/app/main.cpp.i
-.PHONY : src/core/app/main.cpp.i
-
-src/core/app/main.s: src/core/app/main.cpp.s
-.PHONY : src/core/app/main.s
-
-# target to generate assembly for a file
-src/core/app/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pacman_app.dir/build.make CMakeFiles/pacman_app.dir/src/core/app/main.cpp.s
-.PHONY : src/core/app/main.cpp.s
 
 src/gui/placeholder.o: src/gui/placeholder.cpp.o
 .PHONY : src/gui/placeholder.o
@@ -398,18 +422,21 @@ help:
 	@echo "... pacman_core"
 	@echo "... pacman_tests"
 	@echo "... pacman_ui"
+	@echo "... src/app/main.o"
+	@echo "... src/app/main.i"
+	@echo "... src/app/main.s"
 	@echo "... src/core/Board.o"
 	@echo "... src/core/Board.i"
 	@echo "... src/core/Board.s"
+	@echo "... src/core/Game.o"
+	@echo "... src/core/Game.i"
+	@echo "... src/core/Game.s"
 	@echo "... src/core/Ghost.o"
 	@echo "... src/core/Ghost.i"
 	@echo "... src/core/Ghost.s"
 	@echo "... src/core/Player.o"
 	@echo "... src/core/Player.i"
 	@echo "... src/core/Player.s"
-	@echo "... src/core/app/main.o"
-	@echo "... src/core/app/main.i"
-	@echo "... src/core/app/main.s"
 	@echo "... src/gui/placeholder.o"
 	@echo "... src/gui/placeholder.i"
 	@echo "... src/gui/placeholder.s"
