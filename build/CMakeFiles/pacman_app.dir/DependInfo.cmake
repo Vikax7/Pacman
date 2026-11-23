@@ -8,8 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/viktoria/oop/Pacman/src/app/main.cpp" "CMakeFiles/pacman_app.dir/src/app/main.cpp.o" "gcc" "CMakeFiles/pacman_app.dir/src/app/main.cpp.o.d"
-  "" "pacman_app" "gcc" "CMakeFiles/pacman_app.dir/link.d"
+  "/home/viktoria/oop/Pacman/src/app/AppController.cpp" "CMakeFiles/pacman_app.dir/src/app/AppController.cpp.o" "gcc" "CMakeFiles/pacman_app.dir/src/app/AppController.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

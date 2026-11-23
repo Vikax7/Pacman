@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/viktoria/oop/Pacman/tests/core_test.cpp" "CMakeFiles/pacman_tests.dir/tests/core_test.cpp.o" "gcc" "CMakeFiles/pacman_tests.dir/tests/core_test.cpp.o.d"
+  "/home/viktoria/oop/Pacman/tests/game_test.cpp" "CMakeFiles/pacman_tests.dir/tests/game_test.cpp.o" "gcc" "CMakeFiles/pacman_tests.dir/tests/game_test.cpp.o.d"
   "" "pacman_tests" "gcc" "CMakeFiles/pacman_tests.dir/link.d"
   )
 

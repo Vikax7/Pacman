@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/home/viktoria/oop/Pacman/src/core
 
-CXX_FLAGS = -g -std=c++20 -Wall -Wextra -Werror
+CXX_FLAGS = -std=c++20 -Wall -Wextra -Werror
 

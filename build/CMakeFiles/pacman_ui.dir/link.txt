@@ -1,2 +1,2 @@
-/usr/bin/ar qc libpacman_ui.a CMakeFiles/pacman_ui.dir/src/gui/placeholder.cpp.o
+/usr/bin/ar qc libpacman_ui.a CMakeFiles/pacman_ui.dir/src/tui/TerminalUi.cpp.o
 /usr/bin/ranlib libpacman_ui.a

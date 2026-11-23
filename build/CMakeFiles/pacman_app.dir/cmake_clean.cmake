@@ -1,9 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/pacman_app.dir/link.d"
-  "CMakeFiles/pacman_app.dir/src/app/main.cpp.o"
-  "CMakeFiles/pacman_app.dir/src/app/main.cpp.o.d"
-  "pacman_app"
-  "pacman_app.pdb"
+  "CMakeFiles/pacman_app.dir/src/app/AppController.cpp.o"
+  "CMakeFiles/pacman_app.dir/src/app/AppController.cpp.o.d"
+  "libpacman_app.a"
+  "libpacman_app.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

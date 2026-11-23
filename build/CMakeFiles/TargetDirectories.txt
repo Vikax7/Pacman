@@ -1,6 +1,7 @@
 /home/viktoria/oop/Pacman/build/CMakeFiles/pacman_core.dir
-/home/viktoria/oop/Pacman/build/CMakeFiles/pacman_ui.dir
 /home/viktoria/oop/Pacman/build/CMakeFiles/pacman_app.dir
+/home/viktoria/oop/Pacman/build/CMakeFiles/pacman_ui.dir
+/home/viktoria/oop/Pacman/build/CMakeFiles/pacman_app_exe.dir
 /home/viktoria/oop/Pacman/build/CMakeFiles/pacman_tests.dir
 /home/viktoria/oop/Pacman/build/CMakeFiles/test.dir
 /home/viktoria/oop/Pacman/build/CMakeFiles/edit_cache.dir

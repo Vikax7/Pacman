@@ -43,6 +43,7 @@ class Game {
         explicit Game(std::vector<std::string> level_files_, GameConfig config = {});
 
         void startNewGame();
+        void advanceLevelOrRestart();
 
         void setPlayerDesiredDirection(Direction direction) noexcept;
         void togglePause() noexcept;
@@ -55,4 +56,6 @@ class Game {
         const Board& getBoard() const noexcept { return board_; }
         const Player& getPlayer() const noexcept { return player_; }
         const std::vector<Ghost>& getGhosts() const noexcept { return ghosts_; }
+        const std::vector<std::string>& getLevelFiles() const noexcept { return level_files_; }
+        size_t getCurrentLevelIndex() const noexcept { return current_level_index_; }
 };

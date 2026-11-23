@@ -6,5 +6,5 @@ CXX_DEFINES = -DDOCTEST_CONFIG_IMPLEMENT_WITH_MAIN
 
 CXX_INCLUDES = -I/home/viktoria/oop/Pacman/build/_deps/doctest-src
 
-CXX_FLAGS = -g -std=c++11 -Wall -Wextra -Werror
+CXX_FLAGS = -std=c++11 -Wall -Wextra -Werror
 

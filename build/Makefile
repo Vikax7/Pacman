@@ -185,6 +185,19 @@ pacman_core/fast:
 .PHONY : pacman_core/fast
 
 #=============================================================================
+# Target rules for targets named pacman_app
+
+# Build rule for target.
+pacman_app: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pacman_app
+.PHONY : pacman_app
+
+# fast build rule for target.
+pacman_app/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pacman_app.dir/build.make CMakeFiles/pacman_app.dir/build
+.PHONY : pacman_app/fast
+
+#=============================================================================
 # Target rules for targets named pacman_ui
 
 # Build rule for target.
@@ -198,17 +211,17 @@ pacman_ui/fast:
 .PHONY : pacman_ui/fast
 
 #=============================================================================
-# Target rules for targets named pacman_app
+# Target rules for targets named pacman_app_exe
 
 # Build rule for target.
-pacman_app: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pacman_app
-.PHONY : pacman_app
+pacman_app_exe: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pacman_app_exe
+.PHONY : pacman_app_exe
 
 # fast build rule for target.
-pacman_app/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pacman_app.dir/build.make CMakeFiles/pacman_app.dir/build
-.PHONY : pacman_app/fast
+pacman_app_exe/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pacman_app_exe.dir/build.make CMakeFiles/pacman_app_exe.dir/build
+.PHONY : pacman_app_exe/fast
 
 #=============================================================================
 # Target rules for targets named pacman_tests
@@ -236,12 +249,36 @@ doctest_with_main/fast:
 	$(MAKE) $(MAKESILENT) -f _deps/doctest-build/CMakeFiles/doctest_with_main.dir/build.make _deps/doctest-build/CMakeFiles/doctest_with_main.dir/build
 .PHONY : doctest_with_main/fast
 
+src/app/AppController.o: src/app/AppController.cpp.o
+.PHONY : src/app/AppController.o
+
+# target to build an object file
+src/app/AppController.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pacman_app.dir/build.make CMakeFiles/pacman_app.dir/src/app/AppController.cpp.o
+.PHONY : src/app/AppController.cpp.o
+
+src/app/AppController.i: src/app/AppController.cpp.i
+.PHONY : src/app/AppController.i
+
+# target to preprocess a source file
+src/app/AppController.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pacman_app.dir/build.make CMakeFiles/pacman_app.dir/src/app/AppController.cpp.i
+.PHONY : src/app/AppController.cpp.i
+
+src/app/AppController.s: src/app/AppController.cpp.s
+.PHONY : src/app/AppController.s
+
+# target to generate assembly for a file
+src/app/AppController.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pacman_app.dir/build.make CMakeFiles/pacman_app.dir/src/app/AppController.cpp.s
+.PHONY : src/app/AppController.cpp.s
+
 src/app/main.o: src/app/main.cpp.o
 .PHONY : src/app/main.o
 
 # target to build an object file
 src/app/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pacman_app.dir/build.make CMakeFiles/pacman_app.dir/src/app/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pacman_app_exe.dir/build.make CMakeFiles/pacman_app_exe.dir/src/app/main.cpp.o
 .PHONY : src/app/main.cpp.o
 
 src/app/main.i: src/app/main.cpp.i
@@ -249,7 +286,7 @@ src/app/main.i: src/app/main.cpp.i
 
 # target to preprocess a source file
 src/app/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pacman_app.dir/build.make CMakeFiles/pacman_app.dir/src/app/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pacman_app_exe.dir/build.make CMakeFiles/pacman_app_exe.dir/src/app/main.cpp.i
 .PHONY : src/app/main.cpp.i
 
 src/app/main.s: src/app/main.cpp.s
@@ -257,7 +294,7 @@ src/app/main.s: src/app/main.cpp.s
 
 # target to generate assembly for a file
 src/app/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pacman_app.dir/build.make CMakeFiles/pacman_app.dir/src/app/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pacman_app_exe.dir/build.make CMakeFiles/pacman_app_exe.dir/src/app/main.cpp.s
 .PHONY : src/app/main.cpp.s
 
 src/core/Board.o: src/core/Board.cpp.o
@@ -356,29 +393,29 @@ src/core/Player.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pacman_core.dir/build.make CMakeFiles/pacman_core.dir/src/core/Player.cpp.s
 .PHONY : src/core/Player.cpp.s
 
-src/gui/placeholder.o: src/gui/placeholder.cpp.o
-.PHONY : src/gui/placeholder.o
+src/tui/TerminalUi.o: src/tui/TerminalUi.cpp.o
+.PHONY : src/tui/TerminalUi.o
 
 # target to build an object file
-src/gui/placeholder.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pacman_ui.dir/build.make CMakeFiles/pacman_ui.dir/src/gui/placeholder.cpp.o
-.PHONY : src/gui/placeholder.cpp.o
+src/tui/TerminalUi.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pacman_ui.dir/build.make CMakeFiles/pacman_ui.dir/src/tui/TerminalUi.cpp.o
+.PHONY : src/tui/TerminalUi.cpp.o
 
-src/gui/placeholder.i: src/gui/placeholder.cpp.i
-.PHONY : src/gui/placeholder.i
+src/tui/TerminalUi.i: src/tui/TerminalUi.cpp.i
+.PHONY : src/tui/TerminalUi.i
 
 # target to preprocess a source file
-src/gui/placeholder.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pacman_ui.dir/build.make CMakeFiles/pacman_ui.dir/src/gui/placeholder.cpp.i
-.PHONY : src/gui/placeholder.cpp.i
+src/tui/TerminalUi.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pacman_ui.dir/build.make CMakeFiles/pacman_ui.dir/src/tui/TerminalUi.cpp.i
+.PHONY : src/tui/TerminalUi.cpp.i
 
-src/gui/placeholder.s: src/gui/placeholder.cpp.s
-.PHONY : src/gui/placeholder.s
+src/tui/TerminalUi.s: src/tui/TerminalUi.cpp.s
+.PHONY : src/tui/TerminalUi.s
 
 # target to generate assembly for a file
-src/gui/placeholder.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pacman_ui.dir/build.make CMakeFiles/pacman_ui.dir/src/gui/placeholder.cpp.s
-.PHONY : src/gui/placeholder.cpp.s
+src/tui/TerminalUi.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pacman_ui.dir/build.make CMakeFiles/pacman_ui.dir/src/tui/TerminalUi.cpp.s
+.PHONY : src/tui/TerminalUi.cpp.s
 
 tests/core_test.o: tests/core_test.cpp.o
 .PHONY : tests/core_test.o
@@ -404,6 +441,30 @@ tests/core_test.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pacman_tests.dir/build.make CMakeFiles/pacman_tests.dir/tests/core_test.cpp.s
 .PHONY : tests/core_test.cpp.s
 
+tests/game_test.o: tests/game_test.cpp.o
+.PHONY : tests/game_test.o
+
+# target to build an object file
+tests/game_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pacman_tests.dir/build.make CMakeFiles/pacman_tests.dir/tests/game_test.cpp.o
+.PHONY : tests/game_test.cpp.o
+
+tests/game_test.i: tests/game_test.cpp.i
+.PHONY : tests/game_test.i
+
+# target to preprocess a source file
+tests/game_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pacman_tests.dir/build.make CMakeFiles/pacman_tests.dir/tests/game_test.cpp.i
+.PHONY : tests/game_test.cpp.i
+
+tests/game_test.s: tests/game_test.cpp.s
+.PHONY : tests/game_test.s
+
+# target to generate assembly for a file
+tests/game_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pacman_tests.dir/build.make CMakeFiles/pacman_tests.dir/tests/game_test.cpp.s
+.PHONY : tests/game_test.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -419,9 +480,13 @@ help:
 	@echo "... test"
 	@echo "... doctest_with_main"
 	@echo "... pacman_app"
+	@echo "... pacman_app_exe"
 	@echo "... pacman_core"
 	@echo "... pacman_tests"
 	@echo "... pacman_ui"
+	@echo "... src/app/AppController.o"
+	@echo "... src/app/AppController.i"
+	@echo "... src/app/AppController.s"
 	@echo "... src/app/main.o"
 	@echo "... src/app/main.i"
 	@echo "... src/app/main.s"
@@ -437,12 +502,15 @@ help:
 	@echo "... src/core/Player.o"
 	@echo "... src/core/Player.i"
 	@echo "... src/core/Player.s"
-	@echo "... src/gui/placeholder.o"
-	@echo "... src/gui/placeholder.i"
-	@echo "... src/gui/placeholder.s"
+	@echo "... src/tui/TerminalUi.o"
+	@echo "... src/tui/TerminalUi.i"
+	@echo "... src/tui/TerminalUi.s"
 	@echo "... tests/core_test.o"
 	@echo "... tests/core_test.i"
 	@echo "... tests/core_test.s"
+	@echo "... tests/game_test.o"
+	@echo "... tests/game_test.i"
+	@echo "... tests/game_test.s"
 .PHONY : help
 
 

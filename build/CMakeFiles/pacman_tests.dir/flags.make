@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/viktoria/oop/Pacman/src/core -I/home/viktoria/oop/Pacman/build/_deps/doctest-src
+CXX_INCLUDES = -I/home/viktoria/oop/Pacman/tests -I/home/viktoria/oop/Pacman/src/core -I/home/viktoria/oop/Pacman/build/_deps/doctest-src
 
-CXX_FLAGS = -g -std=c++20 -Wall -Wextra -Werror
+CXX_FLAGS = -std=c++20 -Wall -Wextra -Werror
 

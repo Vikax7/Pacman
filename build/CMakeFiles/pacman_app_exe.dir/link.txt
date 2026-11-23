@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/pacman_app_exe.dir/link.d CMakeFiles/pacman_app_exe.dir/src/app/main.cpp.o -o pacman_app_exe  libpacman_ui.a libpacman_app.a libpacman_core.a -lcurses /usr/lib/x86_64-linux-gnu/libform.so

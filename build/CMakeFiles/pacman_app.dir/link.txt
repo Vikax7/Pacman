@@ -1,1 +1,2 @@
-/usr/bin/c++ -g -Wl,--dependency-file=CMakeFiles/pacman_app.dir/link.d CMakeFiles/pacman_app.dir/src/app/main.cpp.o -o pacman_app  libpacman_core.a libpacman_ui.a libpacman_core.a
+/usr/bin/ar qc libpacman_app.a CMakeFiles/pacman_app.dir/src/app/AppController.cpp.o
+/usr/bin/ranlib libpacman_app.a

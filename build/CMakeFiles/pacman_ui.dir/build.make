@@ -72,28 +72,28 @@ include CMakeFiles/pacman_ui.dir/flags.make
 CMakeFiles/pacman_ui.dir/codegen:
 .PHONY : CMakeFiles/pacman_ui.dir/codegen
 
-CMakeFiles/pacman_ui.dir/src/gui/placeholder.cpp.o: CMakeFiles/pacman_ui.dir/flags.make
-CMakeFiles/pacman_ui.dir/src/gui/placeholder.cpp.o: /home/viktoria/oop/Pacman/src/gui/placeholder.cpp
-CMakeFiles/pacman_ui.dir/src/gui/placeholder.cpp.o: CMakeFiles/pacman_ui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/viktoria/oop/Pacman/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/pacman_ui.dir/src/gui/placeholder.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pacman_ui.dir/src/gui/placeholder.cpp.o -MF CMakeFiles/pacman_ui.dir/src/gui/placeholder.cpp.o.d -o CMakeFiles/pacman_ui.dir/src/gui/placeholder.cpp.o -c /home/viktoria/oop/Pacman/src/gui/placeholder.cpp
+CMakeFiles/pacman_ui.dir/src/tui/TerminalUi.cpp.o: CMakeFiles/pacman_ui.dir/flags.make
+CMakeFiles/pacman_ui.dir/src/tui/TerminalUi.cpp.o: /home/viktoria/oop/Pacman/src/tui/TerminalUi.cpp
+CMakeFiles/pacman_ui.dir/src/tui/TerminalUi.cpp.o: CMakeFiles/pacman_ui.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/viktoria/oop/Pacman/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/pacman_ui.dir/src/tui/TerminalUi.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pacman_ui.dir/src/tui/TerminalUi.cpp.o -MF CMakeFiles/pacman_ui.dir/src/tui/TerminalUi.cpp.o.d -o CMakeFiles/pacman_ui.dir/src/tui/TerminalUi.cpp.o -c /home/viktoria/oop/Pacman/src/tui/TerminalUi.cpp
 
-CMakeFiles/pacman_ui.dir/src/gui/placeholder.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/pacman_ui.dir/src/gui/placeholder.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/viktoria/oop/Pacman/src/gui/placeholder.cpp > CMakeFiles/pacman_ui.dir/src/gui/placeholder.cpp.i
+CMakeFiles/pacman_ui.dir/src/tui/TerminalUi.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/pacman_ui.dir/src/tui/TerminalUi.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/viktoria/oop/Pacman/src/tui/TerminalUi.cpp > CMakeFiles/pacman_ui.dir/src/tui/TerminalUi.cpp.i
 
-CMakeFiles/pacman_ui.dir/src/gui/placeholder.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/pacman_ui.dir/src/gui/placeholder.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/viktoria/oop/Pacman/src/gui/placeholder.cpp -o CMakeFiles/pacman_ui.dir/src/gui/placeholder.cpp.s
+CMakeFiles/pacman_ui.dir/src/tui/TerminalUi.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/pacman_ui.dir/src/tui/TerminalUi.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/viktoria/oop/Pacman/src/tui/TerminalUi.cpp -o CMakeFiles/pacman_ui.dir/src/tui/TerminalUi.cpp.s
 
 # Object files for target pacman_ui
 pacman_ui_OBJECTS = \
-"CMakeFiles/pacman_ui.dir/src/gui/placeholder.cpp.o"
+"CMakeFiles/pacman_ui.dir/src/tui/TerminalUi.cpp.o"
 
 # External object files for target pacman_ui
 pacman_ui_EXTERNAL_OBJECTS =
 
-libpacman_ui.a: CMakeFiles/pacman_ui.dir/src/gui/placeholder.cpp.o
+libpacman_ui.a: CMakeFiles/pacman_ui.dir/src/tui/TerminalUi.cpp.o
 libpacman_ui.a: CMakeFiles/pacman_ui.dir/build.make
 libpacman_ui.a: CMakeFiles/pacman_ui.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/viktoria/oop/Pacman/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libpacman_ui.a"

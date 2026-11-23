@@ -20,6 +20,8 @@ events:
     names:
       - "uname"
     candidate_directories:
+      - "/home/viktoria/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "/home/viktoria/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/sbin/"
@@ -30,12 +32,16 @@ events:
       - "/usr/local/games/"
       - "/snap/bin/"
     searched_directories:
+      - "/home/viktoria/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/uname"
+      - "/home/viktoria/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/uname"
       - "/usr/local/sbin/uname"
       - "/usr/local/bin/uname"
       - "/usr/sbin/uname"
     found: "/usr/bin/uname"
     search_context:
       ENV{PATH}:
+        - "/home/viktoria/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/home/viktoria/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"

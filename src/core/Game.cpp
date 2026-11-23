@@ -81,13 +81,23 @@ void Game::startNewGame() {
     status_ = (board_.getNumDots() == 0) ? GameStatus::Victory : GameStatus::Playing;
 }
 
+void Game::advanceLevelOrRestart() {
+    if (current_level_index_ + 1 < level_files_.size()) {
+        ++current_level_index_;
+        loadLevelByIndex(current_level_index_);
+        status_ = GameStatus::Playing;
+    } else {
+        startNewGame();
+    }
+}
+
 void Game::loadLevelByIndex(size_t level_index) {
     if (level_index >= level_files_.size()) {
         throw std::out_of_range("Индекс уровня выходит за пределы списка уровней");
     }
     board_.loadFromFile(level_files_[level_index]);
     const int current_score = player_.getScore();
-    const int remaining_lives = player_.getLives();
+    const int remaining_lives = config_.initial_lives;
     player_ = Player(board_.getPlayerStart(), remaining_lives);
     player_.addScore(current_score);
     spawnGhosts();
@@ -147,6 +157,7 @@ void Game::respawnEntitiesAfterDeath() {
     player_.respawn(board_.getPlayerStart());
     for (Ghost& ghost : ghosts_) {
         ghost.respawnAtHome();
+
     }
 }
 
@@ -187,13 +198,7 @@ void Game::update() {
     collectItem(player_.getPosition());
 
     if (board_.getNumDots() == 0) {
-        if (current_level_index_ + 1 < level_files_.size()) {
-            ++current_level_index_;
-            loadLevelByIndex(current_level_index_);
-            status_ = GameStatus::Playing;
-        } else {
-            status_ = GameStatus::Victory;
-        }
+        status_ = GameStatus::Victory;
         return;
     }
 
@@ -211,13 +216,5 @@ void Game::update() {
         return;
     }
 
-    if (board_.getNumDots() == 0) {
-        if (current_level_index_ + 1 < level_files_.size()) {
-            ++current_level_index_;
-            loadLevelByIndex(current_level_index_);
-            status_ = GameStatus::Playing;
-        } else {
-            status_ = GameStatus::Victory;
-        }
-    }
+    
 }
